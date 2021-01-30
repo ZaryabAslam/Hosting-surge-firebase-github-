@@ -1,0 +1,28 @@
+download github
+right click on folder then git bash here
+git status ( to check position)
+git init (to make it a repository)
+git status( to check again)
+git add -A ( to watch files)
+again git status
+git commit -m "deploying saylani website"
+git config --global user.name "zaryabaslam"
+git config --global user.email "zaryabaslam553@gmail.com"
+git commit -m "jo kam kar rahy ho wo likh do"
+git remote add origin https://github.com/ZaryabAslam/SaylaniWebsitebyZaryab.git (last adrres is repsoitry adres)
+git push -u origin master
+
+
+
+branching in git
+1. if u want to make a branch in master branch then write
+git branch branchname
+
+2.if check how many branches are there then write
+git branch -v
+
+3. to shift to another branch. let say from master to another branch(already created)
+git checkout branchname
+
+4. to merge changes of one bracnh into main branch
+git merge master  

@@ -1,0 +1,15 @@
+1.install node js
+2.npm install --globall  surge
+3.surge token
+4.surge
+
+- react app deploty localy--
+1. install yarn by comand npm install -g yarn
+then yarn build in the folder of project.
+then surge ./build
+web is deployed.
+
+
+
+surge token
+4b34674639b8abfb62f592a7b67651b6

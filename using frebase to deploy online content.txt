@@ -1,0 +1,22 @@
+1st step
+go to firebase.org
+create proejct
+
+2nd step
+install node js stable version
+
+3rd step
+open cmd with administrator
+check node and npm version with commands(node -v)(npm -v)
+install firebase using command(npm install --global firebase-tools)
+firebase --version
+
+step 4
+create a website
+open cmd go to its location using cd .. for backward and cd for forward
+after going into the website folder
+write login firebase 
+then write firebase init
+hit space on hosting then enter thn enter
+go to ur website folder then ccut ur css and html files and paste into public folder
+then write firebase deploy(ur website is deployed :) )

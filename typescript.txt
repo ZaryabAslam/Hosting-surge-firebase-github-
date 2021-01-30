@@ -1,0 +1,5 @@
+to install typescript in a react proejct write
+npx create-react-app --template typescript
+
+to install typescript globally in system type sommand in cmd
+npm install -g typescript

@@ -1,0 +1,31 @@
+1.open git bash here
+2.npx create-react-app foldername
+3.go to folder and open vs code
+4.on terminal write npm start (it will open in browser the basic react app)
+to check the app write npm start in terminal of vscode
+
+5. we will deploy it on github and surge.
+open terminal in vs code
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin (paste path to direcrory)
+git remote -v
+git push -u origin master
+it is deployed :)
+
+surge token
+4b34674639b8abfb62f592a7b67651b6
+
+--------------------Using material ui----------------------
+go to material ui website
+install the commands from website
+copy paste commands in index html.
+-------------------using chart.js ------------------------
+npm install --save react-chartjs-2 chart.js (use this command- it is a wrapper for chat.js
+because original chat.js is for pure js not react)
+then to got this repo-here every chart is well coded (https://github.com/jerairrest/react-chartjs-2)
+ 
+-----------------------using rOUTES-----------------------
+
+npm install react-router-dom (FOR NORMAL VERSION)

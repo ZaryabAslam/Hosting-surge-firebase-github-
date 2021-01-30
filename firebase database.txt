@@ -1,0 +1,58 @@
+-------------------------------------------firebase database----------------
+go to firebase go to any project. click databse then add project then u will see an api. copy and paste it into ur html head then copy
+the smaller script and change name where app appears to database.
+ur app is now connected to firebase database
+
+------------------------------js file------------------
+create a function on click on a button.
+whithin that function all the commands will reside.
+
+--------------inserting data intoo db-------------
+
+1. firebase.database().ref('students').set(student) -----where students in ref will add a main heading(reference for ur database
+and all the data will reside beneath it). and set methood is used to add data and it will overwrite the previous data if u run it multiple time.
+the student in set function is a object made in database . u can also hard code the data in set method and it will be saved in database.
+in case if u want a child of main heading let say student1 then there are two methods of doing it.
+1.a -- firebase.database().ref('students').child("students1").set(student)
+or 1.b -- firebase.database().ref('students/students1').set(student)
+2. set will overwrite the data therefore u use push() method. everytime it creates a random key and store data in it and it also
+dont overwrite the previous daata. e.g firebase.database().ref('students').push(student)
+2.a -- if u want to  create a maual key -- var key = Math.random() *22345333; firebase.database().ref()('students' + key.toFixed()).set(stuents)
+here the tofixed methid is used to omit values after decimal and here set will also work work as push
+2.b --for making a manual key usig firebase --  var key = firebase.database().ref('students').push().key;firebase.database().ref('students' + key).set(student) 
+
+---------fetching data from db----------------
+1. create a function then firebase.database().ref('students').once('value',function(data){
+console.log(data.val())
+})
+}
+call the functiion;.
+here for getting data once function is used. it will retrieve data everytime the page is refreshed
+and it takes two param, first one is 'value' and sexcond is a function having anyy parameter.
+and while displaying use val() function with that param to display correct form of data and then finally call the function
+
+if u want to call a particular key from whole database then firebase.database().ref('students/gsdfjg493574').set(student) ---like this add key after main reference
+
+2. there ios another method on() it will retrieve data in real time no need to refresh the page
+firebase.database().ref('students').on('child_added',function(data){
+console.log(data.val())
+})
+}
+the difference is in its first param . it gets first param as 'child_added'
+
+---------removing data from db-------
+
+
+create a function then firebase.database().ref('students/83497fbsdjkfhk').remove()
+}
+call the functiion;.
+
+--------to edit the data------
+function editdata(){
+firebase.database().ref('students').set({
+key: 'adfjkdklfj984375',
+name: 'xyz',
+rolno: '123'
+})
+}
+here we need to recreate the object and then change the values in that function that you want to change
