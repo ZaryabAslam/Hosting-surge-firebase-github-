@@ -1,0 +1,14 @@
+git reset -- unstage the files(not commited yet)local machine file my change nae aega
+git reset --hard (changes jo kye hain files main wo b remove hojaengi)
+git log (to show all commit changes)
+
+branching
+git branch( show list o branches)
+git branch -v(show list of branches with some deatils)
+git branch brnachname (create new branch with name branchanme)
+git checkout branchname (switch to branchname branch)
+git log branch1..branch2 (show commi difference in two branches)
+git merge branchname( branchname will be meerged with current active branch)
+git log (to show all commit changes)
+
+git branch -v (show remote repo and local repo- connected or not)
